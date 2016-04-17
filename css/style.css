@@ -1,280 +1,142 @@
-/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+/* set your base font and uncomment
 
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
+$base-font-size: 15px;
 
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
+body {
+  line-height: 1; }
 
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
+ol, ul {
+  list-style: none; }
 
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
+blockquote, q {
+  quotes: none; }
 
-/*
- * A better looking default horizontal rule
- */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
+body {
+  min-width: 320px; }
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
-}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
 
-/*
- * Remove default fieldset styles.
- */
+.header {
+  background: #000;
+  padding: 10px; }
 
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
+.wrap {
+  margin: 0 auto;
+  padding: 10px;
+  border: 2px dashed gray;
+  max-width: 580px; }
 
-/*
- * Allow only vertical resizing of textareas.
- */
+.header-content {
+  background: #c1c1c1;
+  text-align: center;
+  font-size: 30px;
+  width: auto; }
 
-textarea {
-    resize: vertical;
-}
+.main {
+  padding: 10px; }
 
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
+.main-content {
+  background: wheat; }
 
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
+.box {
+  background: steelblue;
+  border: 2px dashed dodgerblue;
+  margin-bottom: 10px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  padding: 10px 0; }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+.logo-wrapper {
+  width: 31%;
+  margin: 0 auto;
+  padding-top: 10px; }
 
+.features {
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box; }
 
+.features-item {
+  width: 31%;
+  float: left;
+  margin-right: 3.4%; }
+  .features-item:last-child {
+    margin-right: 0; }
 
+.content-culumn-left {
+  width: 48%;
+  float: left;
+  margin-right: 3.4%; }
 
+.content-column-right {
+  width: 48%;
+  float: right; }
 
+.footer {
+  background: #000;
+  padding: 10px; }
 
+.footer-content {
+  background: gray;
+  font-size: 30px;
+  width: auto;
+  text-align: center; }
 
+/* === Layout grid === */
+/* === Header layout === */
+/* === Main layout === */
+/* === Footer layout === */
+/* === Sidebar layout === */
+/* === common buttons === */
+/* === Nav module === */
+/* === Header module === */
+/* === Main module === */
+/* === Footer module === */
 
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers:
- */
-
-.hidden {
-    display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInV0aWxpdGllcy9fZnVuY3Rpb25zLnNjc3MiLCJiYXNlL19yZXNldC5zY3NzIiwiYmFzZS9fYmFzZS5zY3NzIiwibGF5b3V0L19ncmlkLnNjc3MiLCJsYXlvdXQvX2hlYWRlci5zY3NzIiwibGF5b3V0L19tYWluLnNjc3MiLCJsYXlvdXQvX2Zvb3Rlci5zY3NzIiwibGF5b3V0L19zaWRlYmFyLnNjc3MiLCJtb2R1bGVzL19idXR0b25zLnNjc3MiLCJtb2R1bGVzL19uYXYuc2NzcyIsIm1vZHVsZXMvX2hlYWRlci5zY3NzIiwibW9kdWxlcy9fbWFpbi5zY3NzIiwibW9kdWxlcy9fZm9vdGVyLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBS0E7Ozs7RUFJRTtBQ1RGOzs7RUFHRTtBQUVGOzs7Ozs7Ozs7Ozs7O0VBYUUsVUFBVTtFQUNWLFdBQVc7RUFDWCxVQUFVO0VBQ1YsZ0JBQWdCO0VBQ2hCLGNBQWM7RUFDZCx5QkFBeUIsRUFDMUI7O0FBQ0QsaURBQWlEO0FBQ2pEOztFQUVFLGVBQWUsRUFDaEI7O0FBQ0Q7RUFDRSxlQUFlLEVBQ2hCOztBQUNEO0VBQ0UsaUJBQWlCLEVBQ2xCOztBQUNEO0VBQ0UsYUFBYSxFQUNkOztBQUNEOztFQUVFLFlBQVk7RUFDWixjQUFjLEVBQ2Y7O0FBQ0Q7RUFDRSwwQkFBMEI7RUFDMUIsa0JBQWtCLEVBQ25COztBQy9DRDtFQUVFLGlCQUFpQixFQUNsQjs7QUFFRDtFQUNFLFlBQVk7RUFDWixlQUFlO0VBQ2YsWUFBWSxFQUNiOztBQUVEO0VBQ0UsaUJBQWlCO0VBQ2pCLGNBQWMsRUFDZjs7QUFFRDtFQUNFLGVBQWU7RUFDZixjQUFjO0VBQ2Qsd0JBQXdCO0VBQ3hCLGlCQUFpQixFQUNsQjs7QUFFRDtFQUNFLG9CQUFvQjtFQUNwQixtQkFBbUI7RUFDbkIsZ0JBQWdCO0VBQ2hCLFlBQVksRUFDYjs7QUFHRDtFQUNFLGNBQWMsRUFDZjs7QUFFRDtFQUNFLGtCQUFrQixFQUNuQjs7QUFHRDtFQUNFLHNCQUFzQjtFQUN0Qiw4QkFBOEI7RUFDOUIsb0JBQW9CO0VBQ3BCLCtCQUF1QjtLQUF2Qiw0QkFBdUI7VUFBdkIsdUJBQXVCO0VBQ3ZCLG1CQUFtQjtFQUNuQixZQUFZO0VBQ1osZ0JBQWdCLEVBQ2pCOztBQUVEO0VBQ0UsV0FBVztFQUNYLGVBQWU7RUFDZixrQkFBa0IsRUFDbkI7O0FBRUQ7RUFDRSxlQUFlO0VBQ2YsK0JBQXVCO0tBQXZCLDRCQUF1QjtVQUF2Qix1QkFBdUIsRUFDeEI7O0FBRUQ7RUFDRSxXQUFXO0VBQ1gsWUFBWTtFQUNaLG1CQUFtQixFQUlwQjtFQVBEO0lBS0ksZ0JBQWdCLEVBQ2pCOztBQUdIO0VBQ0UsV0FBVztFQUNYLFlBQVk7RUFDWixtQkFBbUIsRUFDcEI7O0FBQ0Q7RUFDRSxXQUFXO0VBQ1gsYUFBYSxFQUNkOztBQUVEO0VBQ0UsaUJBQWlCO0VBQ2pCLGNBQWMsRUFDZjs7QUFFRDtFQUNFLGlCQUFpQjtFQUNqQixnQkFBZ0I7RUFDaEIsWUFBWTtFQUNaLG1CQUFtQixFQUNwQjs7QUMxRkQseUJBQXlCO0FDQXpCLDJCQUEyQjtBQ0EzQix5QkFBeUI7QUNBekIsMkJBQTJCO0FDQTNCLDRCQUE0QjtBQ0E1Qiw0QkFBNEI7QUNBNUIsd0JBQXdCO0FDQXhCLDJCQUEyQjtBQ0EzQix5QkFBeUI7QUNBekIsMkJBQTJCIiwiZmlsZSI6InN0eWxlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkBmdW5jdGlvbiBlbSgkdGFyZ2V0LCAkY29udGV4dDogJGJhc2UtZm9udC1zaXplKSB7XHJcbiAgIEBpZiAkdGFyZ2V0ID09IDAgeyBAcmV0dXJuIDAgfVxyXG4gICBAcmV0dXJuICR0YXJnZXQgLyAkY29udGV4dCArIDBlbTtcclxufVxyXG5cclxuLyogc2V0IHlvdXIgYmFzZSBmb250IGFuZCB1bmNvbW1lbnRcclxuXHJcbiRiYXNlLWZvbnQtc2l6ZTogMTVweDtcclxuXHJcbiovIiwiLyogaHR0cDovL21leWVyd2ViLmNvbS9lcmljL3Rvb2xzL2Nzcy9yZXNldC9cbiAgIHYyLjAgfCAyMDExMDEyNlxuICAgTGljZW5zZTogbm9uZSAocHVibGljIGRvbWFpbilcbiovXG5cbmh0bWwsIGJvZHksIGRpdiwgc3BhbiwgYXBwbGV0LCBvYmplY3QsIGlmcmFtZSxcbmgxLCBoMiwgaDMsIGg0LCBoNSwgaDYsIHAsIGJsb2NrcXVvdGUsIHByZSxcbmEsIGFiYnIsIGFjcm9ueW0sIGFkZHJlc3MsIGJpZywgY2l0ZSwgY29kZSxcbmRlbCwgZGZuLCBlbSwgaW1nLCBpbnMsIGtiZCwgcSwgcywgc2FtcCxcbnNtYWxsLCBzdHJpa2UsIHN0cm9uZywgc3ViLCBzdXAsIHR0LCB2YXIsXG5iLCB1LCBpLCBjZW50ZXIsXG5kbCwgZHQsIGRkLCBvbCwgdWwsIGxpLFxuZmllbGRzZXQsIGZvcm0sIGxhYmVsLCBsZWdlbmQsXG50YWJsZSwgY2FwdGlvbiwgdGJvZHksIHRmb290LCB0aGVhZCwgdHIsIHRoLCB0ZCxcbmFydGljbGUsIGFzaWRlLCBjYW52YXMsIGRldGFpbHMsIGVtYmVkLFxuZmlndXJlLCBmaWdjYXB0aW9uLCBmb290ZXIsIGhlYWRlciwgaGdyb3VwLFxubWVudSwgbmF2LCBvdXRwdXQsIHJ1YnksIHNlY3Rpb24sIHN1bW1hcnksXG50aW1lLCBtYXJrLCBhdWRpbywgdmlkZW8ge1xuICBtYXJnaW46IDA7XG4gIHBhZGRpbmc6IDA7XG4gIGJvcmRlcjogMDtcbiAgZm9udC1zaXplOiAxMDAlO1xuICBmb250OiBpbmhlcml0O1xuICB2ZXJ0aWNhbC1hbGlnbjogYmFzZWxpbmU7XG59XG4vKiBIVE1MNSBkaXNwbGF5LXJvbGUgcmVzZXQgZm9yIG9sZGVyIGJyb3dzZXJzICovXG5hcnRpY2xlLCBhc2lkZSwgZGV0YWlscywgZmlnY2FwdGlvbiwgZmlndXJlLFxuZm9vdGVyLCBoZWFkZXIsIGhncm91cCwgbWVudSwgbmF2LCBzZWN0aW9uIHtcbiAgZGlzcGxheTogYmxvY2s7XG59XG5ib2R5IHtcbiAgbGluZS1oZWlnaHQ6IDE7XG59XG5vbCwgdWwge1xuICBsaXN0LXN0eWxlOiBub25lO1xufVxuYmxvY2txdW90ZSwgcSB7XG4gIHF1b3Rlczogbm9uZTtcbn1cbmJsb2NrcXVvdGU6YmVmb3JlLCBibG9ja3F1b3RlOmFmdGVyLFxucTpiZWZvcmUsIHE6YWZ0ZXIge1xuICBjb250ZW50OiAnJztcbiAgY29udGVudDogbm9uZTtcbn1cbnRhYmxlIHtcbiAgYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTtcbiAgYm9yZGVyLXNwYWNpbmc6IDA7XG59IiwiYm9keSB7XG5cbiAgbWluLXdpZHRoOiAzMjBweDtcbn1cblxuLmNsZWFyZml4OjphZnRlciB7XG4gIGNvbnRlbnQ6IFwiXCI7XG4gIGRpc3BsYXk6IHRhYmxlO1xuICBjbGVhcjogYm90aDtcbn1cblxuLmhlYWRlciB7XG4gIGJhY2tncm91bmQ6ICMwMDA7XG4gIHBhZGRpbmc6IDEwcHg7XG59XG5cbi53cmFwIHtcbiAgbWFyZ2luOiAwIGF1dG87XG4gIHBhZGRpbmc6IDEwcHg7XG4gIGJvcmRlcjogMnB4IGRhc2hlZCBncmF5O1xuICBtYXgtd2lkdGg6IDU4MHB4O1xufVxuXG4uaGVhZGVyLWNvbnRlbnQge1xuICBiYWNrZ3JvdW5kOiAjYzFjMWMxO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGZvbnQtc2l6ZTogMzBweDtcbiAgd2lkdGg6IGF1dG87XG59XG5cblxuLm1haW4ge1xuICBwYWRkaW5nOiAxMHB4O1xufVxuXG4ubWFpbi1jb250ZW50IHtcbiAgYmFja2dyb3VuZDogd2hlYXQ7XG59XG5cblxuLmJveCB7XG4gIGJhY2tncm91bmQ6IHN0ZWVsYmx1ZTtcbiAgYm9yZGVyOiAycHggZGFzaGVkIGRvZGdlcmJsdWU7XG4gIG1hcmdpbi1ib3R0b206IDEwcHg7XG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgY29sb3I6ICNmZmY7XG4gIHBhZGRpbmc6IDEwcHggMDtcbn1cblxuLmxvZ28td3JhcHBlciB7XG4gIHdpZHRoOiAzMSU7XG4gIG1hcmdpbjogMCBhdXRvO1xuICBwYWRkaW5nLXRvcDogMTBweDtcbn1cblxuLmZlYXR1cmVzIHtcbiAgbWFyZ2luOiAwIGF1dG87XG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG59XG5cbi5mZWF0dXJlcy1pdGVtIHtcbiAgd2lkdGg6IDMxJTtcbiAgZmxvYXQ6IGxlZnQ7XG4gIG1hcmdpbi1yaWdodDogMy40JTtcbiAgJjpsYXN0LWNoaWxkIHtcbiAgICBtYXJnaW4tcmlnaHQ6IDA7XG4gIH1cbn1cblxuLmNvbnRlbnQtY3VsdW1uLWxlZnQge1xuICB3aWR0aDogNDglO1xuICBmbG9hdDogbGVmdDtcbiAgbWFyZ2luLXJpZ2h0OiAzLjQlO1xufVxuLmNvbnRlbnQtY29sdW1uLXJpZ2h0IHtcbiAgd2lkdGg6IDQ4JTtcbiAgZmxvYXQ6IHJpZ2h0O1xufVxuXG4uZm9vdGVyIHtcbiAgYmFja2dyb3VuZDogIzAwMDtcbiAgcGFkZGluZzogMTBweDtcbn1cblxuLmZvb3Rlci1jb250ZW50IHtcbiAgYmFja2dyb3VuZDogZ3JheTtcbiAgZm9udC1zaXplOiAzMHB4O1xuICB3aWR0aDogYXV0bztcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuIiwiLyogPT09IExheW91dCBncmlkID09PSAqLyIsIi8qID09PSBIZWFkZXIgbGF5b3V0ID09PSAqL1xyXG5cclxuIiwiLyogPT09IE1haW4gbGF5b3V0ID09PSAqLyIsIi8qID09PSBGb290ZXIgbGF5b3V0ID09PSAqL1xyXG5cclxuIiwiLyogPT09IFNpZGViYXIgbGF5b3V0ID09PSAqLyIsIi8qID09PSBjb21tb24gYnV0dG9ucyA9PT0gKi8iLCIvKiA9PT0gTmF2IG1vZHVsZSA9PT0gKi8iLCIvKiA9PT0gSGVhZGVyIG1vZHVsZSA9PT0gKi8iLCIvKiA9PT0gTWFpbiBtb2R1bGUgPT09ICovIiwiLyogPT09IEZvb3RlciBtb2R1bGUgPT09ICovIl0sInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9 */
